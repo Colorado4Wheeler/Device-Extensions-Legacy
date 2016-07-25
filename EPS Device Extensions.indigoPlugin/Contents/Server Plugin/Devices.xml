@@ -14,7 +14,7 @@
 				<Label>Show temps in:</Label>
 				<List>
 					<Option value="F">Fahrenheit</Option>
-					<Option value="C">Celcius</Option>
+					<Option value="C">Celsius</Option>
 				</List>
 			</Field>
 			
@@ -806,8 +806,8 @@ Schedule is paused (true/false)
 			<Field type="menu" id="action" defaultValue="bool" >
 				<Label>Conversion action:</Label>
 				<List>
-					<Option value="ftoc">Convert Fahrenheit to Celcius</Option>
-					<Option value="ctof">Convert Celcius to Fahrenheit</Option>
+					<Option value="ftoc">Convert Fahrenheit to Celsius</Option>
+					<Option value="ctof">Convert Celsius to Fahrenheit</Option>
 					<Option value="lux">Convert Lux to Word State</Option>
 					<Option value="bool">Convert State to Boolean</Option>
 					<Option value="dtmin">Convert Date/Time to Elapsed Minutes</Option>

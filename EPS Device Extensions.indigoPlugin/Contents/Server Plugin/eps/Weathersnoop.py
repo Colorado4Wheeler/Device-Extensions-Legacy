@@ -99,8 +99,14 @@ class Weathersnoop:
 		if devEx.pluginProps["statedisplay"] == "currenthumidity": 
 			stateSuffix = ""
 
-			stateFloat = float(dev.states["humidity"])
-			stateString = str(dev.states["humidity"])
+			
+			if dev.pluginId == "com.fogbert.indigoplugin.wunderground":
+				stateFloat = float(dev.states["relativeHumidity"])
+				stateString = str(dev.states["relativeHumidity"])
+			else:
+				stateFloat = float(dev.states["humidity"])
+				stateString = str(dev.states["humidity"])
+				
 			devEx.updateStateImageOnServer(indigo.kStateImageSel.HumiditySensor)
 			
 		elif devEx.pluginProps["statedisplay"] == "highhumidity": 
